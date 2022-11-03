@@ -28,3 +28,44 @@ public class CountWords
    }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/*
+MapReduce is a technique in which a huge program is subdivided into small tasks and run parallelly 
+to make computation faster, save time, and mostly used in distributed systems. It has 2 important parts: 
+
+    Mapper: It takes raw data input and organizes into key, value pairs. 
+            For example, In a dictionary, you search for the word “Data” and its associated meaning is 
+            “facts and statistics collected together for reference or analysis”. Here the Key is Data and 
+            the Value associated with is facts and statistics collected together for reference or analysis.
+    Reducer: It is responsible for processing data in parallel and produce final output.
