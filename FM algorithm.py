@@ -21,6 +21,30 @@ print('distict elements', 2**maxnum)
 print("--- %s seconds ---" % (time.time() - start_time))
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 """Flajolet-Martin algorithm approximates the number of unique objects in a stream or a database in one pass. 
 If the stream contains n elements with m of them unique, this algorithm runs in O(n) time and needs O(log(m)) memory.
 
