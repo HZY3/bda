@@ -66,8 +66,8 @@ the edges with the highest betweenness are eliminated which means that communiti
 
 The Girvan-Newman algorithm can be divided into four main steps:
 
-For every edge in a graph, calculate the edge betweenness centrality.
-Remove the edge with the highest betweenness centrality.
-Calculate the betweenness centrality for every remaining edge.
-Repeat steps 2-4 until there are no more edges left.
+1.For every edge in a graph, calculate the edge betweenness centrality.
+2.Remove the edge with the highest betweenness centrality.
+3.Calculate the betweenness centrality for every remaining edge.
+4.Repeat steps 2-4 until there are no more edges left.
 """
