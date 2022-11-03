@@ -51,19 +51,23 @@ plt.show()
 
 
 """
-The clique percolation method is as follows:
+The Girvan-Newman algorithm for the detection and analysis of
+community structure relies on the iterative elimination of edges 
+that have the highest number of shortest paths between nodes passing through them.
+By removing edges from the graph one-by-one, the network breaks down into smaller pieces,
+so-called communities. The algorithm was introduced by Michelle Girvan and Mark Newman.
 
-1) All K cliques present in graph G are extracted.
+How does it work?​
+The idea was to find which edges in a network occur most frequently 
+between other pairs of nodes by finding edges betweenness centrality. 
+The edges joining communities are then expected to have a high edge betweenness. 
+The underlying community structure of the network will be much more fine-grained once 
+the edges with the highest betweenness are eliminated which means that communities will be much easier to spot.
 
-2) A new clique graph GC is created -
+The Girvan-Newman algorithm can be divided into four main steps:
 
-a) Here each extracted K - CLIQUE is compressed as one vertex.
-
-b) The two vertices are connected by an edge in GC if they have k - 1 common verticls.
-
-3) connected components in GC are identified.
-
-4) Each connected component in GC represents a community
-
-5) Set C will be set of communities formed for G.
+For every edge in a graph, calculate the edge betweenness centrality.
+Remove the edge with the highest betweenness centrality.
+Calculate the betweenness centrality for every remaining edge.
+Repeat steps 2-4 until there are no more edges left.
 """
