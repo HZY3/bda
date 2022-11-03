@@ -16,3 +16,54 @@ for node in G:
 		
 nx.draw(G, node_color=color_map, with_labels=True) 
 plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+The clique percolation method is as follows:
+
+1) All K cliques present in graph G are extracted.
+
+2) A new clique graph GC is created -
+
+a) Here each extracted K - CLIQUE is compressed as one vertex.
+
+b) The two vertices are connected by an edge in GC if they have k - 1 common verticls.
+
+3) connected components in GC are identified.
+
+4) Each connected component in GC represents a community
+
+5) Set C will be set of communities formed for G.
+"""
